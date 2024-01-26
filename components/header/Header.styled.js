@@ -5,11 +5,11 @@ export const HeaderEl = styled.header`
   top: 0;
   z-index: 2;
   width: 100%;
-  background-color: var(--bg-color);
+  background-color: var(--transparent-color);
   padding: 24px 0;
 
   &.scrolled {
-    background-color: var(--wight-color);
+    background-color: var(--bg-color);
   }
 `;
 
@@ -21,6 +21,6 @@ justify-content: space-between;`
 export const Div = styled.div`
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 70px;
 `;
 

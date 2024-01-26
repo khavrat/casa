@@ -8,7 +8,7 @@ import { Container } from "../reusableComponents/container/Container";
 import { changedColorHeader } from "../../helpers/changedColorHeader";
 
 export const Header = () => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState();
 
   useEffect(() => {
     window.addEventListener("scroll", changedColorHeader);
