@@ -1,11 +1,26 @@
 import styled from "@emotion/styled";
 
 export const HeaderEl = styled.header`
-  @media screen and (min-width: 1280px) {
-    padding: 25px 0;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  background-color: var(--bg-color);
+  padding: 24px 0;
+
+  &.scrolled {
+    background-color: var(--wight-color);
   }
 `;
 
-export const Title = styled.header`
-  color: #d28b8b;
+export const Wrap = styled.div`
+display: flex;
+align-items: center;
+justify-content: space-between;`
+
+export const Div = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 30px;
 `;
+

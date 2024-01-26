@@ -1,9 +1,10 @@
-@import "normalize.css";
-@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@400;600&display=swap");
 :root {
   --bg-color: #FAF9F5;
-  --primary-color: #000000;
-  --accent-color: #FFC197;
+  --primary-color: #211F1E;
+  --black-color: #000000;
+  --wight-color: #ffffff;
+  --accent-color: #ffc197;
   --form-text-color: #bdbdbd;
   --form-invalid-color: #d28b8b;
   --transparent-color: transparent;
@@ -14,7 +15,11 @@
   --cardText-fontSize: 14px;
   --faqText-fontSize: 16px;
   --textLg-fontSize: 18px;
+  --logoLg-fontSize: 24px;
   --titleLg-fontSize: 36px;
+
+  --regular-fontWeight: 400;
+  --semibold-fontWeight: 600;
 }
 
 html {
@@ -39,8 +44,7 @@ body.modal-open {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas,
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, monospace;
 }
 
 ul {
