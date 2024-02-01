@@ -24,12 +24,6 @@ export const Link = styled.a`
   }
 `;
 
-    //   ${({ rotate }) =>
-    //     rotate === "-90"
-    //       ? "transform: scaleX(1.25); transform-origin: center left"
-    //       : "transform: scaleY(1.25); transform-origin: center top"};
-
-
 
 export const Span = styled.span`
   position: relative;

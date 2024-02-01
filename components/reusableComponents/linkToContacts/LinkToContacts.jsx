@@ -1,10 +1,9 @@
 import { Link, Span } from "./LinkToContacts.styled";
 
-export const LinkToContacts = ({ title, rotate, display }) => {
-    console.log("rotate :>> ", rotate === "-90");
+export const LinkToContacts = ({ title, ...styles }) => {
     
   return (
-    <Link href="#" aria-label="link to contacts" style={{ display }}>
+    <Link href="#" aria-label="link to contacts" style={{ ...styles }}>
       <Span>{title}</Span>
       <svg
         width="11"

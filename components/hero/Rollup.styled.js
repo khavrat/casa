@@ -29,6 +29,7 @@ export const RollupContainer = styled.h1`
   gap: 20px;
   padding: 16px 60px;
   min-width: 485px;
+  border-radius: 4px;
   overflow: hidden;
   cursor: pointer;
   background-color: var(--primary-color);
@@ -49,6 +50,7 @@ export const RollupContainer = styled.h1`
     width: 100%;
     height: 100%;
     background-color: var(--primary-color);
+    border-radius: 4px;
     opacity: 0;
     transform: translateX(-100%);
     transition: all 1000ms var(--timing-function);
