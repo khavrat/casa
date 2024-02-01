@@ -1,5 +1,5 @@
 import texts from "../../data/texts.json";
-import { StarEl } from "./StarElement";
+import { StarEl } from "../reusableComponents/starElement/StarElement";
 import { Wrap, Text, RollupContainer, TagLine } from "./Rollup.styled";
 
 export const Rollup = () => {

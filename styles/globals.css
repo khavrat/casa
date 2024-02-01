@@ -1,13 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@400;600&display=swap");
 :root {
-  --bg-color: #FAF9F5;
-  --primary-color: #211F1E;
+  --bg-color: #faf9f5;
+  --primary-color: #211f1e;
   --black-color: #000000;
   --wight-color: #ffffff;
   --accent-color: #ffc197;
   --form-text-color: #bdbdbd;
   --form-invalid-color: #d28b8b;
   --transparent-color: transparent;
+  /*steps colors*/
+  --intellectualGray-color: #a8a093;
+  --delft-color-color: #8b9fa0;
+  --evergreenFog-color: #95978a;
+  --spicedCider-color: #b0785c;
+  --tempeStar-color: #5d7880;
+  --shodjiWight-color: #e6dfd3;
+  --worldlyGray-color: #cec6bb;
+  --anjouPear-color: #ddac6d;
 
   --transition-duration: 250ms;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);

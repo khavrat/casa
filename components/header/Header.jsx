@@ -1,11 +1,12 @@
-import { useEffect, useState, useLayoutEffect } from "react";
+import { useEffect, useState } from "react";
+import { useIsomorphicLayoutEffect } from "../../hooks/useIsomorphicLayoutEffect";
 import texts from "../../data/texts.json";
 import { Logo } from "../reusableComponents/logo/Logo";
 import { LinkToContacts } from "../reusableComponents/linkToContacts/LinkToContacts";
 import { ButtonMenu } from "../reusableComponents/buttonMenu/ButtonMenu";
-import { HeaderEl, Wrap, Div } from "./Header.styled";
 import { Container } from "../reusableComponents/container/Container";
 import { changedColorHeader } from "../../helpers/changedColorHeader";
+import { HeaderEl, Wrap, Div } from "./Header.styled";
 
 export const Header = () => {
   const [windowWidth, setWindowWidth] = useState();
@@ -17,7 +18,7 @@ export const Header = () => {
     };
   }, []);
 
-  useLayoutEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
     };
