@@ -8,6 +8,8 @@
   --form-text-color: #bdbdbd;
   --form-invalid-color: #d28b8b;
   --transparent-color: transparent;
+  --blurBg-color: rgba(250, 249, 245, 0.3);
+
   /*steps colors*/
   --intellectualGray-color: #a8a093;
   --delft-color-color: #8b9fa0;
