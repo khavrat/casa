@@ -11,6 +11,7 @@ export const Slider = styled.div`
   overflow: hidden;
   border-radius: 6px;
   width: 100%;
+  height: 100%;
 `;
 
 export const SpanBefore = styled.span`
@@ -61,11 +62,13 @@ export const Before = styled.div`
   }
 
   > img {
-    width: ${(props) => props.children?.props?.width}px;
+    // width: ${(props) => props.children?.props?.width}px;
+    width: 100%;
     height: 540px;
     display: block;
     object-fit: cover;
     object-position: left top;
+    overflow: hidden;
   }
 `;
 

@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
-import texts from "../../../data/texts.json";
-import { BeforeImage, AfterImage } from "./SliderImage";
+import texts from "../../../../data/texts.json";
+import { BeforeImage, AfterImage } from "../sliderData/SliderImage";
 import {
   Box,
   Slider,
@@ -10,17 +10,17 @@ import {
   After,
 } from "./SliderEl.styled";
 
-export const SliderEl = () => {
+export const SliderEl = ({ item }) => {
   const sliderRef = useRef(null);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const [widthImg, setWidthImg] = useState(0);
+  // const [widthImg, setWidthImg] = useState(0);
   const [mouseLeave, setMouseLeave] = useState(false);
 
-  useEffect(() => {
-    if (sliderRef.current) {
-      setWidthImg(sliderRef.current.offsetWidth);
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (sliderRef.current) {
+  //     setWidthImg(sliderRef.current.offsetWidth);
+  //   }
+  // }, []);
 
   const handleMouseMove = (e) => {
     setMouseLeave(false);
@@ -42,16 +42,15 @@ export const SliderEl = () => {
               : { width: 50 + "%", transition: 0.3 + "s" }
           }
         >
-          <BeforeImage width={widthImg} />
+          <BeforeImage item={item.beforeImg} width={560} height={540} />
           <SpanBefore>{texts.portfolio.slider.before}</SpanBefore>
         </Before>
 
         <After id="after">
-          <AfterImage />
+          <AfterImage item={item.afterImg} width={560} height={540} />
           <SpanAfter>{texts.portfolio.slider.after}</SpanAfter>
         </After>
       </Slider>
     </Box>
   );
 };
-

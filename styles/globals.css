@@ -98,3 +98,25 @@ li {
 button {
   cursor: pointer;
 }
+
+.slick-slide > div {
+  @media screen and (min-width: 768px) {
+    margin: 0 12px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin: 0 24px;
+  }
+}
+/* .slick-list {
+  @media screen and (min-width: 768px) {
+    margin: 0 -12px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin: 0 -24px;
+  }
+} */
+
+.slick-prev:before,
+.slick-next:before {
+  display: none;
+}

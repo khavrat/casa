@@ -1,9 +1,11 @@
-import { SliderEl } from "./slider/SliderEl";
+// import { SliderEl } from "./slider/sliderEl/SliderEl";
+import {CaruselEl} from "./slider/caruselEl/CaruselEl"
 
 export const Portfolio = () => {
-    return (
-        <section>
-            <SliderEl/>
-        </section>
-    )
-}
+  return (
+    <section>
+          {/* <SliderEl /> */}
+          <CaruselEl/>
+    </section>
+  );
+};
