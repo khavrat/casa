@@ -5,11 +5,17 @@ export const Wrap = styled.div`
   flex-direction: column;
   gap: 25px;
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  padding: 20px;
+  padding: 6px;
+
+  @media screen and (min-width: 768px) {
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+  }
 `;
 
 export const Text = styled.p`
@@ -26,19 +32,26 @@ export const RollupContainer = styled.h1`
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-  padding: 16px 60px;
-  min-width: 485px;
+  gap: 16px;
+  padding: 12px 10px;
+  min-width: 340px;
+  max-width: 340px;
   border-radius: 4px;
   overflow: hidden;
   cursor: pointer;
   background-color: var(--primary-color);
   transition: all 1000ms var(--timing-function);
 
+  @media screen and (min-width: 768px) {
+    padding: 16px 60px;
+    gap: 20px;
+    min-width: 485px;
+  }
+
   &:before {
     content: attr(data-content);
     color: var(--bg-color);
-    font-size: var(--textLg-fontSize);
+    font-size: var(--cardText-fontSize);
     font-weight: var(--regular-fontWeight);
     line-height: 1.5;
     display: inline-flex;
@@ -54,6 +67,10 @@ export const RollupContainer = styled.h1`
     opacity: 0;
     transform: translateX(-100%);
     transition: all 1000ms var(--timing-function);
+
+    @media screen and (min-width: 768px) {
+      font-size: var(--textLg-fontSize);
+    }
   }
 
   &:hover {
@@ -69,10 +86,15 @@ export const RollupContainer = styled.h1`
 
 export const TagLine = styled.p`
   color: var(--primary-color);
-  font-size: (--textLg-fontSize);
+  font-size: (--cardText-fontSize);
   font-weight: var(--regular-fontWeight);
   line-height: 1.56;
   letter-spacing: 0.9px;
   margin: 0 auto;
-  width: 420px;
+  // width: 420px;
+
+  @media screen and (min-width: 768px) {
+    font-size: (--textLg-fontSize);
+    width: 420px;
+  }
 `;

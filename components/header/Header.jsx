@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useIsomorphicLayoutEffect } from "../../hooks/useIsomorphicLayoutEffect";
 import texts from "../../data/texts.json";
-import { Logo } from "../reusableComponents/logo/Logo";
+import { Logo, LogoSm } from "../reusableComponents/logo/Logo";
 import { LinkToContacts } from "../reusableComponents/linkToContacts/LinkToContacts";
 import { ButtonMenu } from "../reusableComponents/buttonMenu/ButtonMenu";
 import { Container } from "../reusableComponents/container/Container";
@@ -33,7 +33,11 @@ export const Header = () => {
       <HeaderEl>
         <Container>
           <Wrap>
-            <Logo width="75px" height="75px" />
+            {windowWidth >= 1280 ? (
+              <Logo width="75px" height="75px" />
+            ) : (
+              <LogoSm />
+            )}
             <Div>
               {windowWidth >= 768 ? (
                 <LinkToContacts title={texts.links.inHeader} />

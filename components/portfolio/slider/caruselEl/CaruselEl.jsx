@@ -73,7 +73,7 @@ export const CaruselEl = () => {
       <ArrowsContainer className="container"></ArrowsContainer>
       <Slider {...settings}>
         {sliderData.map((item) => (
-          <SliderEl item={item} />
+          <SliderEl key={item.id} item={item} />
         ))}
       </Slider>
     </>

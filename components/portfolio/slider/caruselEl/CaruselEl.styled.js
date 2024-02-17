@@ -4,7 +4,6 @@ export const ArrowsContainer = styled.div`
   &.container {
     position: relative;
     width: 144px;
-    background-color: red;
   }
 `;
 
@@ -114,9 +113,8 @@ export const CounterContainer = styled.div`
 `;
 
 export const Counter = styled.div`
-  color: green;
-  font-size: 16px;
-  font-weight: 300;
+  color: var(--anjouPear-color);
+  font-size: var(--textLg-fontSize);
   line-height: 1.2;
   letter-spacing: -1.12px;
 `;
@@ -125,8 +123,7 @@ export const ActiveCount = styled.span`
   display: inline-block;
   width: 30px;
   color: var(--primary-color);
-  font-size: 20px;
-  font-weight: 300;
+  font-size: var(--textLg-fontSize);
   line-height: 1.2;
   letter-spacing: -1.12px;
 `;

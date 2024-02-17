@@ -14,3 +14,15 @@ export const HeroImage = ({ width, height }) => {
       />
     );
 };
+
+export const HeroBg = ({ width, height }) => {
+  return (
+    <div
+      style={{
+        backgroundColor: "var(--anjouPear-color)",
+        width: "100%",
+        height: "360px",
+      }}
+    ></div>
+  );
+}
